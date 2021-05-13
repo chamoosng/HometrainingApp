@@ -22,7 +22,7 @@ public class PopUpActivity extends Activity {
     }
 
     public void mOnClose(View v){
-        //데이터 전달하기
+        
         EditText min = (EditText)findViewById(R.id.etn_min);
         EditText sec = (EditText)findViewById(R.id.etn_sec);
 
@@ -32,7 +32,7 @@ public class PopUpActivity extends Activity {
         intent.putExtra("sec", sec.getText().toString());
         setResult(RESULT_OK, intent);
 
-        //액티비티(팝업) 닫기
+       
         finish();
     }
 
