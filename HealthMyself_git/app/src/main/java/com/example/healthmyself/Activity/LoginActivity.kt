@@ -51,13 +51,13 @@ class LoginActivity : AppCompatActivity() {
         if (requestCode == RC_SIGN_IN) {
             val response = IdpResponse.fromResultIntent(data)
             if (resultCode == RESULT_OK) {
-                // 로그인 성공
+                // ログインに成功
                 val user = FirebaseAuth.getInstance().currentUser
                 moveToMain()
                 // ...
             } else {
-                // 로그인 실패할 경우
-                Toast.makeText(this, "로그인 실패, 로그인을 다시 실행하세요.", Toast.LENGTH_LONG).show()
+                // 
+                Toast.makeText(this, "ログインに失敗、ログインを再び実行してください。", Toast.LENGTH_LONG).show()
             }
         }
     }
