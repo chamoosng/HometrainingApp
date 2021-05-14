@@ -230,9 +230,6 @@ public class CalendarAdapter extends RecyclerView.Adapter {
             String flag = ((Day)model).getText();
             gfd.getFirebaseData(((Day)model).getCal(), item_layout);
 
-            Log.d("day", day);
-            Log.d("day_of_week", String.valueOf(day_of_week));
-
             // 일자 값 View에 보이게하기
 
             if(day_of_week == 1) {
