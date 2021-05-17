@@ -44,26 +44,28 @@
 
     <TextView
         android:id="@+id/btn_logout"
-        android:text="로그아웃"
+        android:text="ログアウト"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="80dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/button_background"
+        android:textColor="@color/pastel_blue"
+        android:background="@drawable/main_button"
         android:textSize="20dp"
         android:textStyle="bold"
         android:gravity="center"
         />
     <TextView
         android:id="@+id/btn_account_delete"
-        android:text="계정 탈퇴"
+        android:text="アカウントの削除"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="80dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/button_background"
+        android:textColor="@color/pastel_blue"
+        android:background="@drawable/main_button"
         android:textSize="20dp"
         android:textStyle="bold"
         android:gravity="center"
@@ -76,9 +78,10 @@
 
         <TextView
             android:id="@+id/alarm_txt"
-            android:text="운동 알람 사용"
+            android:text="やアラーム"
             android:layout_width="match_parent"
             android:layout_height="48dp"
+            android:textColor="@color/pastel_blue"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp"
@@ -86,10 +89,14 @@
             android:textStyle="bold"
             android:gravity="center"
             />
+
         <com.google.android.material.checkbox.MaterialCheckBox
             android:id="@+id/alarm_check"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:theme="@style/CustomCheckbox01"
+            android:paddingTop="10dp"
+            android:layout_marginRight="10dp"
             />
 
     </LinearLayout>
