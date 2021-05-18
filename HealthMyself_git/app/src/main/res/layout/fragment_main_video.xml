@@ -23,7 +23,7 @@
             android:text="上 体"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:textSize="15sp"
+            android:textSize="15dp"
             android:drawableTop="@drawable/ic_chest"
             android:background="@drawable/main_button"
             android:paddingTop="20dp"
@@ -32,7 +32,8 @@
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
             android:clickable="true"
-            tools:ignore="RtlCompat" />
+            tools:ignore="RtlCompat"
+            />
 
         <TextView
             android:id="@+id/btn_lower_body"
@@ -46,7 +47,7 @@
             android:text="下 半 身"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:textSize="15sp"
+            android:textSize="15dp"
             android:drawableTop="@drawable/ic_leg_1"
             android:background="@drawable/main_button"
             android:paddingTop="20dp"
@@ -68,7 +69,7 @@
             android:text="有 酸 素"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:textSize="15sp"
+            android:textSize="15dp"
             android:drawableTop="@drawable/ic_run_1"
             android:background="@drawable/main_button"
             android:paddingTop="20dp"
@@ -90,7 +91,7 @@
             android:text="コ ア"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:textSize="15sp"
+            android:textSize="15dp"
             android:drawableTop="@drawable/ic_core"
             android:background="@drawable/main_button"
             android:paddingTop="30dp"
