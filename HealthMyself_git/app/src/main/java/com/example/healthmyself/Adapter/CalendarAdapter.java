@@ -228,7 +228,7 @@ public class CalendarAdapter extends RecyclerView.Adapter {
             String day = ((Day)model).getDay();
             int day_of_week = ((Day)model).getDOW();
             String flag = ((Day)model).getText();
-            gfd.getFirebaseData(((Day)model).getCal(), item_layout);
+            gfd.getFirebaseData(((Day)model).getCal(), item_layout, ct);
 
             // 일자 값 View에 보이게하기
 
@@ -259,25 +259,5 @@ public class CalendarAdapter extends RecyclerView.Adapter {
         };
     }
 
-    /*
-    public void getFirebaseDatabase(){
-        ValueEventListener postListener = new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                Log.e("getFirebaseDatabase", "key: " + dataSnapshot.getChildrenCount());
 
-                for (DataSnapshot postSnapshot: dataSnapshot.getChildren()) {
-                    String key = postSnapshot.getKey();
-                    FirebasePost get = postSnapshot.getValue(FirebasePost.class);
-                    String[] info = {get.id, get.name, String.valueOf(get.age), get.gender};
-
-                }
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                Log.w("getFirebaseDatabase","loadPost:onCancelled", databaseError.toException());
-            }
-        };
-    }*/
 }

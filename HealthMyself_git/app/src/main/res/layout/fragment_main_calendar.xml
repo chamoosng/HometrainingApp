@@ -27,19 +27,19 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="@{(v)->model.startPicker(v)}"
+
                     android:padding="16dp"
                     android:textStyle="bold"
-                    android:text= "カレンダー"
+                    android:text= "Health Calendar"
                     android:textColor="@color/white"
-                    android:background="@color/pastel_blue"
+                    android:background="#03A9F4"
                     android:textSize="18sp" />
 
             </LinearLayout>
-            <!--요일-->
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="20dp"
+                android:layout_height="30dp"
                 android:background="#eaeae9"
                 android:orientation="horizontal">
 
@@ -48,9 +48,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:textColor="#FF0000"
                     android:text="日"
-                    android:textSize="9sp" />
+                    android:textSize="14dp"
+                    android:textColor="#FF0000"/>
 
                 <TextView
                     android:layout_width="0dp"
@@ -59,7 +59,7 @@
                     android:gravity="center"
                     android:text="月"
                     android:textColor="@color/black"
-                    android:textSize="9sp" />
+                    android:textSize="14dp" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -68,7 +68,7 @@
                     android:gravity="center"
                     android:text="火"
                     android:textColor="@color/black"
-                    android:textSize="9sp" />
+                    android:textSize="14dp" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -77,7 +77,7 @@
                     android:gravity="center"
                     android:text="水"
                     android:textColor="@color/black"
-                    android:textSize="9sp" />
+                    android:textSize="14dp" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -86,7 +86,7 @@
                     android:gravity="center"
                     android:text="木"
                     android:textColor="@color/black"
-                    android:textSize="9sp" />
+                    android:textSize="14dp" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -95,16 +95,17 @@
                     android:gravity="center"
                     android:text="金"
                     android:textColor="@color/black"
-                    android:textSize="9sp" />
+                    android:textSize="14dp" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:textColor="#0026FA"
+
                     android:text="土"
-                    android:textSize="9sp" />
+                    android:textSize="14dp"
+                    android:textColor="#0000FF"/>
             </LinearLayout>
             <!--달력뷰-->
             <androidx.recyclerview.widget.RecyclerView
@@ -125,9 +126,9 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/pastel_blue"
         android:clickable="true"
-        app:srcCompat="@drawable/dumball" />
+        app:srcCompat="@drawable/dumball"
+        android:theme="@style/DialogTheme"/>
 
 
 </RelativeLayout>

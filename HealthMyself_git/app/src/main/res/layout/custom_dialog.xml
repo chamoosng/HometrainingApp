@@ -67,7 +67,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text= "動画"/>
+                android:text= "体重"/>
             <EditText
                 android:id="@+id/put_txt_video"
                 android:layout_margin="10dp"
