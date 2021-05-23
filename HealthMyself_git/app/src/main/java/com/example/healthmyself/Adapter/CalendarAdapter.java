@@ -203,7 +203,8 @@ public class CalendarAdapter extends RecyclerView.Adapter {
 
 
         TextView itemDay;
-        TextView itemDay_txt;
+        TextView itemDay_ex_txt;
+        TextView itemDay_weight_txt;
         RelativeLayout item_layout;
         Context ct;
 
@@ -217,6 +218,8 @@ public class CalendarAdapter extends RecyclerView.Adapter {
         public void initView(View v){
 
             itemDay = (TextView)v.findViewById(R.id.item_day);
+            itemDay_ex_txt = (TextView)v.findViewById(R.id.item_day_ex_text);
+            itemDay_weight_txt = (TextView)v.findViewById(R.id.item_day_wegiht_text);
             item_layout = (RelativeLayout)v.findViewById(R.id.item_layout);
             ct = v.getContext();
         }
@@ -227,8 +230,7 @@ public class CalendarAdapter extends RecyclerView.Adapter {
 
             String day = ((Day)model).getDay();
             int day_of_week = ((Day)model).getDOW();
-            String flag = ((Day)model).getText();
-            gfd.getFirebaseData(((Day)model).getCal(), item_layout, ct);
+            gfd.getFirebaseData(((Day)model).getCal(), item_layout, itemDay_ex_txt, itemDay_weight_txt, ct);
 
             // 일자 값 View에 보이게하기
 
@@ -251,7 +253,7 @@ public class CalendarAdapter extends RecyclerView.Adapter {
                     Intent i = new Intent(ct, ShowExDialog.class);
                     i.putExtra("ex", gfd.getData().getEx());
                     i.putExtra("time", gfd.getData().getTime());
-                    i.putExtra("video", gfd.getData().getVideo());
+                    i.putExtra("weight", gfd.getData().getWeight());
                     ct.startActivity(i);
 
                 }

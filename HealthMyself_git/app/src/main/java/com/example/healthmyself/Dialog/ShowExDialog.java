@@ -31,7 +31,7 @@ public class ShowExDialog extends Activity {
     private Context mContext;
     String ex="";
     String time="";
-    String video="";
+    String weight="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,11 +45,11 @@ public class ShowExDialog extends Activity {
 
         ex = getIntent().getStringExtra("ex");
         time = getIntent().getStringExtra("time");
-        video = getIntent().getStringExtra("video");
+        weight = getIntent().getStringExtra("weight");
 
         txt_ex.setText(ex);
         txt_time.setText(time);
-        txt_video.setText(video);
+        txt_video.setText(weight);
 
         cancelButton.setOnClickListener(new Button.OnClickListener() {
             @Override

@@ -3,7 +3,8 @@ package com.example.healthmyself.models;
 public class FirebaseData {
     private String ex;
     private String time;
-    private String video;
+    private String weight;
+
     public String getTime() {
         return time;
     }
@@ -12,12 +13,12 @@ public class FirebaseData {
         this.time = time;
     }
 
-    public String getVideo() {
-        return video;
+    public String getWeight() {
+        return weight;
     }
 
-    public void setVideo(String video) {
-        this.video = video;
+    public void setWeight(String weight) {
+        this.weight = weight;
     }
 
     public String getEx() {
@@ -28,3 +29,4 @@ public class FirebaseData {
         this.ex = ex;
     }
 }
+

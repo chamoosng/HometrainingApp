@@ -17,7 +17,7 @@ public class PostCalendar {
         // Default constructor required for calls to DataSnapshot.getValue(FirebasePost.class)
     }
 
-    public PostCalendar(String ex, String time, String video) {
+    public PostCalendar(String ex, String time, String weight) {
         this.ex = ex;
         this.time = time;
         this.video = video;

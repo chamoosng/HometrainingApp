@@ -35,7 +35,7 @@
         <activity android:name=".Dialog.AlarmDialog" android:theme="@android:style/Theme.Material.Dialog" android:screenOrientation="portrait"/>
         <activity android:name=".Dialog.ShowExDialog" android:theme="@android:style/Theme.Material.Dialog" android:screenOrientation="portrait"/>
         <activity android:name=".Activity.PopUpActivity" android:theme="@android:style/Theme.Material.Dialog" android:screenOrientation="portrait"/>
-
+        <activity android:name=".Dialog.AboutDialog" android:theme="@android:style/Theme.Material.Dialog" android:screenOrientation="portrait"/>
         <service
             android:name=".Service.WidgetService"
             android:enabled="true" />
