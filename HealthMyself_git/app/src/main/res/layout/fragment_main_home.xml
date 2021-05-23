@@ -141,7 +141,7 @@
             android:layout_gravity="center|bottom"
             android:max="100"
             android:progress="0"
-            android:progressTint="#59B6FF"
+            android:progressTint="@color/pastel_blue"
             tools:layout_editor_absoluteX="141dp"
             tools:layout_editor_absoluteY="56dp" />
 
